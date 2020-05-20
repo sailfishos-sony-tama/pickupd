@@ -1,0 +1,9 @@
+[Unit]
+Description=Pickup Sensor Handler
+After=user-session.target
+
+[Service]
+ExecStart=/usr/bin/pickupd
+
+[Install]
+WantedBy=post-user-session.target
