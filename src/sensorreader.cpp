@@ -44,7 +44,7 @@ void SensorReader::dataAvailable(const Tap &data)
 
 void SensorReader::displayChanged(QString state)
 {
-  qDebug() << "New display state: " << state;
+  //qDebug() << "New display state: " << state;
   if (state == "on") sensor->stop();
   else if (state == "off") sensor->start();
 }
